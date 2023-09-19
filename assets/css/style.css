@@ -24,11 +24,13 @@ a {
 label img {
     width: 100%;
     border-radius: 50%;
+    opacity: 0.6;
     border: 2px solid transparent;
 }
 
-input:checked+label {
+input:checked+label img {
     border: 2px solid #C2190E;
+    opacity: 1;
     border-radius: 100%;
 }
 
