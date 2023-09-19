@@ -17,9 +17,12 @@
     --color-secandary: #000;
     --color-tertiary: #BAB9B7;
     --bg-line: #C2190E;
+    --color-tertiary: #bab9b7;
 }
 
+
 /* font-size  */
+
 .fs-sm {
     font-size: var(--fs-sm);
 }
@@ -40,11 +43,8 @@
     font-size: var(--fs-2xl);
 }
 
-.fs-3xl {
-    font-size: var(--fs-3xl);
-}
-
 /* font weight class */
+
 .fw-normal {
     font-weight: var(--fw-normal);
 }
@@ -57,7 +57,9 @@
     font-weight: var(--fw-samibold);
 }
 
+
 /* color */
+
 .color-main {
     color: var(--color-main);
 }
