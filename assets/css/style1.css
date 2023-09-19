@@ -70,3 +70,9 @@ ol,
 ul {
     padding-left: 0 !important;
 }
+
+.line_footer {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-primary);
+}
