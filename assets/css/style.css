@@ -13,6 +13,21 @@
     overflow-y: hidden;
 }
 
+input {
+    display: none;
+}
+
+label img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+input:checked+label {
+    border: 2px solid #C2190E;
+    border-radius: 100%;
+}
+
 .over-layer {
     position: absolute;
     width: 100%;
@@ -79,10 +94,6 @@ nav ul li a {
     display: inline-block;
 }
 
-footer ul li a {
-    display: inline-block;
-}
-
 nav ul li .uniq::after {
     content: "";
     width: 100%;
@@ -95,25 +106,7 @@ nav ul li .uniq::after {
     transition: 0.2s ease-out;
 }
 
-footer ul li a::after {
-    content: "";
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    display: block;
-    background-color: var(--color-secandary);
-    transform-origin: center;
-    transition: 0.2s ease-out;
-}
-
 nav ul li .uniq:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-footer ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
