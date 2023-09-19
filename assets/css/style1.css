@@ -23,8 +23,12 @@
     background-color: var( --color-secandary);
 }
 
-.gap_19 {
-    gap: 19px;
+.pt_custom_19 {
+    padding-top: 19px;
+}
+
+.pt_custom_18 {
+    padding-top: 18px;
 }
 
 
