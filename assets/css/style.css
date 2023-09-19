@@ -17,6 +17,10 @@ input {
     display: none;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 label img {
     width: 100%;
     border-radius: 50%;
