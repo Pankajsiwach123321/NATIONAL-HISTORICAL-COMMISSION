@@ -10,65 +10,77 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-body">
+    <div class="over-layer"></div>
     <!-- header -->
     <header>
-        <div class="container">
-            <nav class="my-nav">
-                <div class="container">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <ul class="px-0 mb-0">
-                            <li><a href="#"><img src="./assets/image/nav-logo.png" alt="nav-logo"
-                                        class="w-nav-logo"></a></li>
+        <nav class="my-nav">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <ul class="px-0 mb-0">
+                        <li><a href="#"><img src="./assets/image/nav-logo.png" alt="nav-logo" class="w-nav-logo"></a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-center gap-xxl-3 gap-2">
+                        <label id="nav" class="nav">
+                            <span class="fix1"></span>
+                            <span class="fix2"></span>
+                            <span class="fix3"></span>
+                        </label>
+                        <ul class="px-0 mb-0 d-flex align-items-center gap-nav menubar">
+                            <li><a href="#"
+                                    class="text-decoration-none fs-md fw-normal color-main font-main uniq finish">Memory</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-decoration-none fs-md fw-normal color-main font-main uniq finish">Justice</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-decoration-none fs-md fw-normal color-main font-main uniq finish">Healing</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-decoration-none fs-md fw-normal color-main font-main uniq finish">Peace</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-decoration-none fs-md fw-normal color-main font-main uniq finish">Development</a>
+                            </li>
+                            <li class="d-block d-md-none d-flex gap-2 align-items-center"><a href="#" class="finish"><img
+                                        src="./assets/image/amricaflag.png" alt="amricaflag"></a>
+                                <a href="#" class="finish"><img src="./assets/image/flag2.png" alt="flag2"></a>
+                            </li>
+                            <li class="d-block d-md-none"><a href="#"
+                                    class="nav-button text-decoration-none fs-md fw-samibold font-main color-primary">Sign
+                                    In</a></li>
+                            <li class="d-block d-md-none"><a href="#"
+                                    class="nav-button text-decoration-none fs-md fw-samibold font-main color-primary">Donate</a>
+                            </li>
                         </ul>
-                        <div class="d-flex align-items-center justify-content-center gap-xxl-3 gap-2">
-                            <label id="nav" class="nav">
-                                <span class="fix1"></span>
-                                <span class="fix2"></span>
-                                <span class="fix3"></span>
-                            </label>
-                            <ul class="px-0 mb-0 d-flex align-items-center gap-nav menubar">
-                                <li><a href="#"
-                                        class="text-decoration-none fs-md fw-normal color-main font-main uniq">Memory</a>
-                                </li>
-                                <li><a href="#"
-                                        class="text-decoration-none fs-md fw-normal color-main font-main uniq">Justice</a>
-                                </li>
-                                <li><a href="#"
-                                        class="text-decoration-none fs-md fw-normal color-main font-main uniq">Healing</a>
-                                </li>
-                                <li><a href="#"
-                                        class="text-decoration-none fs-md fw-normal color-main font-main uniq">Peace</a></li>
-                                <li><a href="#"
-                                        class="text-decoration-none fs-md fw-normal color-main font-main uniq">Development</a>
-                                </li>
-                                <li class="d-block d-md-none d-flex gap-2 align-items-center"><a href="#"><img
-                                            src="./assets/image/amricaflag.png" alt="amricaflag"></a>
-                                    <a href="#"><img src="./assets/image/flag2.png" alt="flag2"></a>
-                                </li>
-                                <li class="d-block d-md-none"><a href="#"
-                                        class="nav-button text-decoration-none fs-md fw-samibold font-main color-primary">Sign
-                                        In</a></li>
-                                <li class="d-block d-md-none"><a href="#"
-                                        class="nav-button text-decoration-none fs-md fw-samibold font-main color-primary">Donate</a>
-                                </li>
-                            </ul>
-                            <ul class=" d-flex align-items-center px-0 mb-0 gap-xxl-3 gap-2">
-                                <li class="d-none d-md-block"><a href="#"><img src="./assets/image/amricaflag.png"
-                                            alt="amricaflag"></a></li>
-                                <li class="d-none d-md-block"><a href="#"><img src="./assets/image/flag2.png"
-                                            alt="flag2" class="img-border"></a></li>
-                                <li class="d-none d-md-block"><a href="#"
-                                        class="nav-button text-decoration-none fs-md fw-samibold font-main color-primary">Sign
-                                        In</a></li>
-                                <li class="d-none d-md-block"><a href="#"
-                                        class="nav-button text-decoration-none fs-md fw-samibold font-main color-primary">Donate</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class=" d-flex align-items-center px-0 mb-0 gap-xxl-3 gap-2">
+                            <li class="d-none d-md-block"><a href="#"><img src="./assets/image/amricaflag.png"
+                                        alt="amricaflag"></a></li>
+                            <li class="d-none d-md-block"><a href="#"><img src="./assets/image/flag2.png" alt="flag2"
+                                        class="img-border"></a></li>
+                            <li class="d-none d-md-block"><a href="#"
+                                    class="nav-button text-decoration-none fs-md fw-samibold font-main color-primary">Sign
+                                    In</a></li>
+                            <li class="d-none d-md-block"><a href="#"
+                                    class="nav-button text-decoration-none fs-md fw-samibold font-main color-primary">Donate</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
+        <div class="bg-header">
+            <div class="container">
+                <div class="py-main-haeader">
+                    <h1 class="color-primary fs-3xl fw-samibold font-main text-center">VILLAGE HISTORY</h1>
+                    <p class="fs-lg fw-normal color-tertiary font-main text-center">Research Group on Khmer Rouge
+                        History
+                    </p>
+                    <p class="fs-xl color-primary font-main fw-normal text-center">HOME > Memory ><span
+                            class="fw-samibold">VILLAGE HISTORY</span></p>
+                </div>
+            </div>
         </div>
     </header>
     <script src="./assets/js/app.js"></script>
