@@ -9,6 +9,31 @@
     box-sizing: border-box;
 }
 
+.over-flow {
+    overflow-y: hidden;
+}
+
+.over-layer {
+    position: absolute;
+    width: 100%;
+    height: 1000%;
+    top: 0;
+    left: -100%;
+    background: #23232377;
+    z-index: 1;
+}
+
+.bg-header {
+    background-image: url(../image/headerimg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.py-main-haeader {
+    padding-top: 82px;
+    padding-bottom: 111px;
+}
+
 .gap-nav {
     gap: 32px;
 }
@@ -91,6 +116,28 @@ nav ul li .uniq:hover::after {
 footer ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.fix1,
+.fix2,
+.fix3 {
+    transition: all 0.2s ease-in-out;
+}
+
+.left-corner {
+    left: 9px;
+}
+
+.fixer1 {
+    display: none;
+}
+
+.fixer2 {
+    transform: rotate(48deg) translate(3px, -1px);
+}
+
+.fixer3 {
+    transform: rotate(-45deg) translate(13px, -10px);
 }
 
 @media (max-width:1199.05px) {

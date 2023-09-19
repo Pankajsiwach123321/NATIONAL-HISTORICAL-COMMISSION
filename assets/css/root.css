@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 :root {
-    --fs-sm: 14px;
+    --fs-sm: 12px;
     --fs-md: 15px;
-    --fs-lg: 16px;
-    --fs-xl: 18px;
-    --fs-2xl: 36px;
-    --fs-3xl: 48px;
+    --fs-lg: 12px;
+    --fs-xl: 13px;
+    --fs-2xl: 26px;
+    --fs-3xl: 31px;
     /* font-weight: ; */
     --fw-normal: 400;
     --fw-medium: 500;
@@ -15,6 +16,7 @@
     --color-main: #4D4D4D;
     --color-primary: #fff;
     --color-secandary: #000;
+    --color-tertiary: #BAB9B7;
     --bg-line: #C2190E;
 }
 
@@ -72,7 +74,7 @@
 }
 
 .color-tertiary {
-    color: var(--color-tertiary);
+    color: var(--color-tertiary)
 }
 
 .bg-line {
@@ -81,4 +83,26 @@
 
 .font-main {
     font-family: var(--font-main);
+}
+
+@media (min-width:575.05px) {
+     :root {
+        --fs-sm: 14px;
+        --fs-md: 15px;
+        --fs-lg: 16px;
+        --fs-xl: 18px;
+        --fs-2xl: 26px;
+        --fs-3xl: 48px;
+    }
+}
+
+@media (min-width:767.05px) {
+     :root {
+        --fs-sm: 14px;
+        --fs-md: 15px;
+        --fs-lg: 16px;
+        --fs-xl: 18px;
+        --fs-2xl: 36px;
+        --fs-3xl: 48px;
+    }
 }
