@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import url(.//root.css);
-
 * {
     padding: 0;
     margin: 0;
@@ -100,7 +99,6 @@ input:checked+label img {
     border-radius: 50%;
 }
 
-
 nav ul li a {
     display: inline-block;
 }
@@ -120,6 +118,26 @@ nav ul li .uniq::after {
 nav ul li .uniq:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.link_footer {
+    position: relative;
+}
+
+.link_footer::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    background-color: #BAB9B7;
+    transition: 0.2s ease-out;
+}
+
+.link_footer:hover::after {
+    left: 0;
+    width: 100%;
 }
 
 .fix1,
@@ -168,8 +186,12 @@ nav ul li .uniq:hover::after {
     max-width: 1096px;
 }
 
-.pt_custom_32 {
-    padding-top: 32px;
+.pt_custom_36 {
+    padding-top: 36px;
+}
+
+.pt_custom_58 {
+    padding-top: 58px;
 }
 
 .red_line {
@@ -181,23 +203,25 @@ nav ul li .uniq:hover::after {
     position: absolute;
     width: 50.84px;
     height: 4px;
-    top: 25px;
+    top: 29px;
+    background-color: var(--bg-line)
+}
+
+.red-line-village {
+    position: relative;
+}
+
+.red-line-village::before {
+    content: '';
+    position: absolute;
+    width: 50.84px;
+    height: 4px;
+    top: 52px;
     background-color: var(--bg-line)
 }
 
 .line_footer {
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-tertiary);
-}
-
-footer ul li a {
-    color: var(--color-tertiary);
-    transition: all linear 0.3s;
-}
-
-footer ul li a:hover {
-    -webkit-text-stroke: 0.6px #BAB9B7;
+    border-top: 1px solid var(--color-tertiary);
 }
 
 @media (max-width:1199.05px) {
@@ -213,17 +237,14 @@ footer ul li a:hover {
         align-items: center;
         z-index: 4;
     }
-
     label[id="nav"]>span {
         width: 100%;
         height: 5px;
         background-color: var(--color-secandary);
     }
-
     .left-corner {
         left: 9px;
     }
-
     .menubar {
         display: flex;
         flex-direction: column;
@@ -241,7 +262,6 @@ footer ul li a:hover {
         transition: all 0.3s ease-in-out;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     }
-
     .left-0 {
         left: 0;
     }
@@ -252,20 +272,15 @@ footer ul li a:hover {
         width: 300px;
         height: 60px;
     }
-
     .pt_custom_27 {
         padding-top: 27px;
     }
-
     .red_line::before {
-        content: '';
-        position: absolute;
         width: 87.84px;
-        height: 4px;
-        top: 25px;
-        background-color: var(--bg-line)
     }
-
+    .red-line-village::before {
+        width: 87.84px;
+    }
     .pb_custom_140 {
         padding-bottom: 140px;
     }
